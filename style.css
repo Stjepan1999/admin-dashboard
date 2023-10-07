@@ -261,9 +261,13 @@ li {
 
 
 .announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1 ;
     display: grid;
     grid-template-rows: 50px 1fr;
     grid-row-gap: 20px;
+    height: 380px;
+    margin-bottom: 0;
 }
 
 .announcements-header {
@@ -285,7 +289,7 @@ li {
 
 .announcement-one,
 .announcement-two,
-.announcement-third{
+.announcement-three{
     padding-left: 20px;
     padding-right: 20px;
     display: grid;
@@ -295,13 +299,75 @@ li {
 
 .announcement-one:hover,
 .announcement-two:hover,
-.announcement-third:hover {
+.announcement-three:hover {
     cursor: pointer;
     background: #E0E0E0;
 }
-
 
 .announcement-one,
 .announcement-two {
     border-bottom: 1px solid black;
 }
+
+
+
+/*MAIN TRENDING SECTION*/
+
+.trending {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3 ;
+    grid-template-rows: 50px 1fr;
+    margin-top: 0;
+}
+
+.trending-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.trending-box {
+    background: var(--article-background);
+    border-radius: 7px;
+    height: 225px;
+    width: 300px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 0px 4px 6px grey;
+}
+
+.trending-box > div {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+}
+
+.trending-box > div:hover {
+    cursor: pointer;
+    background: #E0E0E0;
+}
+
+.trending-account {
+    display: grid;
+    grid-template-rows: auto auto;
+    height: 30px;
+    align-items: center;
+}
+
+.trending-account h5,
+.trending-account p {
+    margin: 0;
+}
+
+.trending img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
