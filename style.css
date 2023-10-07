@@ -5,6 +5,7 @@
     --article-background: #ffffff;
     --article-left-border: #e9ba4c;
     --svg-color: invert(99%) sepia(100%) saturate(2%) hue-rotate(292deg) brightness(104%) contrast(100%);
+    --svg-hover-color: invert(98%) sepia(0%) saturate(7225%) hue-rotate(227deg) brightness(137%) contrast(76%);
     --button-color: #1992d4;
 }
 
@@ -70,6 +71,12 @@ li {
     grid-template-columns: 30px 100px;
     align-items: center;
     grid-gap: 10px;
+}
+
+.sidebar-menu li:hover,
+.settings li:hover {
+    cursor: pointer;
+    filter: var(--svg-hover-color);
 }
 
 
